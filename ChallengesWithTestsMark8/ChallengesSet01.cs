@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace ChallengesWithTestsMark8
 {
@@ -18,27 +19,32 @@ namespace ChallengesWithTestsMark8
 
         public double Subtract(double minuend, double subtrahend)
         {
-            throw new NotImplementedException();
+            var answer = minuend - subtrahend;
+            return answer;
         }
 
         public int Add(int number1, int number2)
         {
-            throw new NotImplementedException();
+            var answer = number1 + number2;
+            return answer;
         }
 
         public int GetSmallestNumber(int number1, int number2)
         {
-            throw new NotImplementedException();
+            int[] numbers = { 7, 13 };
+             
+            return numbers.Min();
         }
 
         public long Multiply(long factor1, long factor2)
         {
-            throw new NotImplementedException();
+            var answer = factor1 * factor2;
+            return answer;
         }
 
         public string GetGreeting(string nameOfPerson)
         {
-            throw new NotImplementedException();
+            var name = 
         }
 
         public string GetHey()
