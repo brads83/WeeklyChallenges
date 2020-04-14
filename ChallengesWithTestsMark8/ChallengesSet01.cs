@@ -31,9 +31,18 @@ namespace ChallengesWithTestsMark8
 
         public int GetSmallestNumber(int number1, int number2)
         {
-            int[] numbers = { 7, 13 };
+            if (number1 < number2)
+            {
+                return number1;
+            }
+            else  
+            {
+                return number2;
+            }
+            
+            /*int[] numbers = new int[2];
              
-            return numbers.Min();
+            return numbers.Min();*/
         }
 
         public long Multiply(long factor1, long factor2)
@@ -44,12 +53,22 @@ namespace ChallengesWithTestsMark8
 
         public string GetGreeting(string nameOfPerson)
         {
-            var name = 
+            var name = nameOfPerson;
+            if (name == "")
+            {
+                return "Hello!";
+            }
+            else
+            {
+                return ($"Hello, {name}!");
+            }
+
         }
 
         public string GetHey()
         {
-            throw new NotImplementedException();
+            string hey = "HEY!";
+            return hey;
         }
     }
 }
