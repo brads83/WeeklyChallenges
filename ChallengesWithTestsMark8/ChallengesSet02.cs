@@ -59,12 +59,12 @@ namespace ChallengesWithTestsMark8
             double lower = numbers.Min();
             double higher = numbers.Max();
             var total = lower + higher;
-           
-           if(numbers == null || numbers.Count() == 0)
+
+            if (numbers != null && numbers.Count() > 0)
             {
-                return 0;
+                return total;
             }
-            return total;
+            return 0;
 
         }
 
